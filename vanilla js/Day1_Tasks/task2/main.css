@@ -1,0 +1,27 @@
+/* p {
+    color: red;
+}
+p, div {
+    background-color: rgb(28, 80, 24);
+
+}
+div#mydiv > p.mainClass {
+    background-color: aqua;
+}
+div p {
+    background-color: aquamarine;
+}
+input[type="text"].myClass {
+    color:blue;
+    border-radius: 30px;
+} */
+div ~ span {
+    color:red;
+    background-color: aqua;
+}
+/* p.myClass {
+    background-color: bisque;
+}
+#mydiv {
+    background-color: cadetblue;
+} */

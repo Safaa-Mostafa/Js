@@ -1,0 +1,24 @@
+const urlParams = new URLSearchParams(window.location.search);
+const params1 = urlParams.get('username');
+const params2 = urlParams.get('age');
+const params3 = urlParams.get('email');
+const params4 = urlParams.get('address');
+const params5 = urlParams.get('gender');
+
+const ul =document.createElement("ul");
+const li1 =document.createElement("li");
+const li2 =document.createElement("li");
+const li3 =document.createElement("li");
+const li4 =document.createElement("li");
+const li5 =document.createElement("li");
+document.body.appendChild(ul);
+ul.appendChild(li1);
+ul.appendChild(li2);
+ul.appendChild(li3);
+ul.appendChild(li4);
+ul.appendChild(li5);
+li1.innerText = params1;
+li2.innerText = params2;
+li3.innerText = params3;
+li4.innerText = params4;
+li5.innerText = params5;

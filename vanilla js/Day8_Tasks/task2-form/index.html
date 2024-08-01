@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .errorMsg {
+        color: red;
+        background-color: #eee;
+        border-radius: 10px;
+        padding: 10px 20px;
+        border: 2px solid red;
+        display: none;
+        width: 360px;
+    }
+
+    button {
+        background: #8a2be2;
+        border: none;
+        color: #eee;
+        margin-top: 2vh;
+        padding: 10px 30px;
+        border-radius: 6px;
+    }
+
+    .display {
+        display: block;
+    }
+
+    .error {
+        display: flex;
+        padding: 5px 0px;
+    }
+
+    body {
+        background-color: #e0ccec;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .in {
+        border: 0;
+        background: transparent;
+        width: 400px;
+        padding: 10px 4px;
+        border-bottom: 1px solid #8a2be2;
+        margin-top: 20px;
+    }
+
+    .in:focus {
+        outline: none;
+    }
+</style>
+
+<body>
+
+    <form action="index2.html">
+        <div>
+            <input type="text" class="in" name="username" placeholder="Username">
+            <div class="error"><span class="errorMsg"></span>
+            </div>
+        </div>
+        <div> <input type="number" class="in" name="age" placeholder="Age">
+            <div class="error"><span class="errorMsg"></span>
+            </div>
+        </div>
+        <div>
+            <input type="email" class="in" name="email" placeholder="Email">
+            <div class="error"><span class="errorMsg"></span>
+            </div>
+        </div>
+        <div>
+            <input type="text" class="in" name="address" placeholder="Address">
+            <div class="error"><span class="errorMsg"></span>
+            </div>
+        </div>
+        <div style="display:flex;">
+            <label for="">gender:</label>
+            <input type="radio" id="F" name="gender" value="F">
+            <label for="F">F</label><br>
+            <input type="radio" id="M" name="gender" value="M">
+            <label for="M">M</label><br>
+        </div>
+        <div class="error"><span class="errorMsg"></span>
+        </div>
+        <button>Submit</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>
